@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <ctype.h>
 
 #define BASE_SIZE 64
 
@@ -37,8 +38,7 @@ int main(void)
 
     while ((char_buffer = getchar()) != EOF)
     {
-        const char char_buffer_norm = char_buffer | 0x20;
-        if (char_buffer_norm >= 'a' && char_buffer_norm <= 'z')
+        if (isalpha(char_buffer))
         {
             if (buffer_used == buffer_size)
             {
@@ -68,8 +68,7 @@ int main(void)
                 buffer = realloc(buffer, sizeof(char) * buffer_size);
             }
             buffer[buffer_used] = '\0';
-            printf(buffer);
-            putchar(char_buffer);
+            printf("%s%c", buffer, char_buffer);
             buffer_used = 0;
         }
     }
