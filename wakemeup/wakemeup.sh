@@ -22,9 +22,9 @@ fi
 echo "I’ll wake you up on `date -d \"$*\"`"
 echo "(In $(( $DIFF / 3600 )) hours and $(( $DIFF / 60 % 60 )) minutes.)"
 
-sleep $(( $THEN - $NOW ))
+sleep $DIFF
 
 while true ; do
     echo "WAKE UP!"
-    beep -f 440 -n -f 880 -n -f 1780 -D 2000
+    beep -f 440 -n -f 880 -n -f 1760 -D 2000
 done
