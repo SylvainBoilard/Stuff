@@ -1,19 +1,4 @@
-Typoglycemier, a typoglicemic scribe.
+Random stuff one might find useful.
 
-Copyright (C) 2013 Sylvain Boilard <boilard@crans.org>
-All rights reserved.
-
-Distributed under the terms of the simplified BSD license.
-
-This program writes to stdout the text entered on stdin, taking each word and
-shuffling their characters except for the first and last character of each
-word. Because of typoglicemia, the text is still readable with a bit of
-effort. This effect can be used to dissimulate a piece of text from a robot
-and make for a basic captcha, or make sure a text can only be read if one
-wants to and help dissimulate spoilers about films or video games where
-discussion forums does not provide more efficient dissimulation methods.
-
-A word is considered to be a suite of letters from A to Z regardless of case.
-Incidentally, accented characters and most Unicode characters that one could
-use to make a legit word will not count as word components, and will instead
-act as word separators.
+Unless stated otherwise, these programs are distributed under the terms of the
+2-clauses BSD license.

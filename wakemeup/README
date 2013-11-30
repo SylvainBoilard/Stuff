@@ -1,0 +1,5 @@
+This program takes a date as defined by the `date` utility as arguments and
+(tries to) wake you up at that time by making annoying noises with your
+motherboard’s buzzer. It will tell you if you give it a date in the past, and
+displays the date at which it will wake you up and the remaining time before
+then so that you can control if it’s good.
