@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # This script only tunnels IPv4 traffic, but can do so through an IPv6 tunnel.
+# The ssh server configuration of the remote side needs to allow root login and
+# tunneling.
 
 # Replace with remote host IP address. Can be an IPv6 address, in which case
 # you do not need to setup the route to the remote on the local endpoint.
